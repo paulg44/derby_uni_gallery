@@ -47,3 +47,21 @@
     }
   }
 }
+
+@media (max-width: 650px) {
+  .homepage {
+    align-items: center;
+    text-align: center;
+  }
+
+  .homepageHeader {
+    margin: 0 20px;
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  .homepageInfo {
+    width: auto;
+  }
+}
