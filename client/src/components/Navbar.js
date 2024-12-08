@@ -1,6 +1,6 @@
 import "../assets/css/navbar.css";
 import { Link } from "react-router-dom";
-import { FaSearch, FaBars } from "react-icons/fa";
+import { FaSearch, FaBars, FaTimes } from "react-icons/fa";
 import logoImage from "../assets/images/uni_derby_logo.jpg";
 import { useState } from "react";
 
@@ -26,6 +26,9 @@ function Navbar() {
       </div>
       <div className={`navLinksContainer ${navMenuOpen ? "open" : ""}`}>
         <ul className="navLinks">
+          {navMenuOpen && (
+            <FaTimes className="faCross" onClick={closeNavMenu} />
+          )}
           <li>Course Search</li>
           <li>Study</li>
           <li>Life</li>

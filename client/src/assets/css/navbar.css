@@ -18,6 +18,10 @@
 
 .navLinksContainer {
   width: 80%;
+
+  .faCross {
+    display: none;
+  }
 }
 
 .navLinks {
@@ -69,12 +73,46 @@
 
   .navLinksContainer.open {
     display: flex;
+
+    .faCross {
+      display: block;
+      font-size: 40px;
+      position: absolute;
+      right: 40px;
+      color: white;
+      top: 20px;
+      cursor: pointer;
+      z-index: 2;
+    }
   }
 
   .navLinksContainer.open .navLinks {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    padding-top: 100px;
+    height: 80vh;
+    background-color: black;
+    border-bottom: 5px solid var(--gold-colour);
     display: flex;
     flex-direction: column;
+    align-items: center;
     z-index: 1;
+  }
+
+  .navLinksContainer.open li {
+    color: white;
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: left;
+    background-color: rgb(74, 70, 70);
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
   }
 
   .logo img {
