@@ -9,6 +9,13 @@ function Gallery() {
           <div className="imageCard" key={step.id}>
             <img src={step.image} alt={step.alt} />
             <h3>{step.caption}</h3>
+            <div className="metadata">
+              <h4>{step.caption}</h4>
+              <p>{step.description}</p>
+              <button type="button" className="linkBtn">
+                {step.link}
+              </button>
+            </div>
           </div>
         ))}
       </div>
