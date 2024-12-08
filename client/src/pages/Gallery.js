@@ -12,9 +12,11 @@ function Gallery() {
             <div className="metadata">
               <h4>{step.caption}</h4>
               <p>{step.description}</p>
-              <button type="button" className="linkBtn">
-                {step.link}
-              </button>
+              <a href={step.link} target="_blank" rel="noreferrer">
+                <button type="button" className="linkBtn">
+                  {step.linkName}
+                </button>
+              </a>
             </div>
           </div>
         ))}
