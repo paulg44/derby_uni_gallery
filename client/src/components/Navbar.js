@@ -31,9 +31,12 @@ function Navbar() {
           <li>Life</li>
           <li>International</li>
           <li>Research</li>
-          <Link to="/gallery" onClick={closeNavMenu}>
-            Gallery
-          </Link>
+          <li>
+            <Link to="/gallery" onClick={closeNavMenu}>
+              Gallery
+            </Link>
+          </li>
+
           <li>Alumni</li>
         </ul>
       </div>
