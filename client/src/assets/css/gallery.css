@@ -1,0 +1,47 @@
+.gallery {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.galleryCardContainer {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 25px 50px;
+}
+
+.imageCard {
+  text-align: center;
+  width: 300px;
+  border: 2px solid black;
+  background-color: white;
+  box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+
+  img {
+    width: 90%;
+    margin-top: 20px;
+    border: 1px solid black;
+  }
+
+  h3 {
+    padding: 16px 0 34px;
+  }
+}
+
+@media (max-width: 650px) {
+  .gallery {
+    height: auto;
+    background: linear-gradient(var(--light-blue), var(--dark-blue));
+  }
+
+  .galleryCardContainer {
+    margin: 120px 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
