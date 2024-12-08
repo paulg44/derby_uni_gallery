@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "image": "/images/letter.jpg",
+    "alt": "acceptance letter",
+    "caption": "Acceptance Letter",
+    "description": "This is your first step on the journey. The acceptance letter",
+    "link": ""
+  },
+  {
+    "id": 2,
+    "image": "/images/uni_accom.jpg",
+    "alt": "new beginnings",
+    "caption": "New Beginnings",
+    "description": "Move in to halls, meet your lifelong friends.",
+    "link": ""
+  },
+  {
+    "id": 3,
+    "image": "/images/orientation.jpg",
+    "alt": "orientation week",
+    "caption": "Orientation Week",
+    "description": "Accustom yourself to your surroundings.",
+    "link": ""
+  },
+  {
+    "id": 4,
+    "image": "/images/lectures.jpg",
+    "alt": "lectures",
+    "caption": "Lectures",
+    "description": "Lectures begin in your chosen subject.",
+    "link": ""
+  },
+  {
+    "id": 5,
+    "image": "/images/uni_club.jpg",
+    "alt": "building connections",
+    "caption": "Building Connections",
+    "description": "Join student clubs and organisations, sports teams and other interests",
+    "link": ""
+  },
+  {
+    "id": 6,
+    "image": "/images/internship.jpg",
+    "alt": "internships",
+    "caption": "Internships",
+    "description": "Your course could send you in this direction.",
+    "link": ""
+  },
+  {
+    "id": 7,
+    "image": "/images/graduation.jpg",
+    "alt": "graduation",
+    "caption": "Graduation",
+    "description": "The last step in the journey, but the most important one. Enjoy the day, go out in the world and make Derby proud.",
+    "link": ""
+  }
+]

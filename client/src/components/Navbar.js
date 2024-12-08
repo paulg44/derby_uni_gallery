@@ -6,7 +6,6 @@ import { useState } from "react";
 
 function Navbar() {
   const [navMenuOpen, setNavMenuOpen] = useState(false);
-  const [navClass, setNavClass] = useState(<FaBars />);
 
   const openNavMenu = () => {
     setNavMenuOpen(!navMenuOpen);

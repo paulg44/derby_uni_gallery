@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../assets/css/home.css";
 import homeBackground from "../assets/images/turtle_bg.jpg";
 
@@ -23,7 +24,9 @@ function Home() {
         </p>
         <div className="galleryCampaign">
           <p>Take a look at your prospective journey through our university.</p>
-          <button type="button">View the Gallery</button>
+          <button type="button">
+            <Link to={"/gallery"}>View the Gallery</Link>
+          </button>
         </div>
       </div>
     </div>
