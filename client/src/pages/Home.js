@@ -23,14 +23,16 @@ function Home() {
           <br />
           We could change yours too.
         </p>
-        <input
-          className="searchBar"
-          name="searchBar"
-          placeholder="Find your dream course..."
-        ></input>
-        <button type="button" className="searchBarBtn">
-          <FaSearch />
-        </button>
+        <div className="searchBarContainer">
+          <input
+            className="searchBar"
+            name="searchBar"
+            placeholder="Find your dream course..."
+          ></input>
+          <button type="button" className="searchBarBtn">
+            <FaSearch />
+          </button>
+        </div>
         <div className="galleryCampaign">
           <p>Take a look at your prospective journey through our university.</p>
           <button type="button">

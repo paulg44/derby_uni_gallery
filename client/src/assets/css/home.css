@@ -60,6 +60,19 @@
       .homepageInfo {
         width: auto;
       }
+
+      .searchBarContainer {
+        display: flex;
+        align-items: center;
+      }
+
+      .searchBar {
+        width: auto;
+      }
+
+      .searchBarBtn {
+        margin-top: 50px;
+      }
     }
   }
 }
