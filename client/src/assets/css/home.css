@@ -19,12 +19,29 @@
     span {
       color: var(--gold-colour);
     }
+
     .homepageInfo {
       width: 50%;
     }
 
+    .searchBar {
+      margin-top: 50px;
+      font-size: 20px;
+      padding: 24px;
+      width: 600px;
+      border: none;
+    }
+
+    .searchBarBtn {
+      background-color: var(--gold-colour);
+      color: white;
+      height: 71px;
+      border: 5px solid white;
+      border-radius: 0;
+    }
+
     .galleryCampaign {
-      padding-top: 80px;
+      padding-top: 10px;
     }
   }
 }

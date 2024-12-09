@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../assets/css/home.css";
-import homeBackground from "../assets/images/turtle_bg.jpg";
+import homeBackground from "../assets/images/turtle_bg_3.jpg";
+import { FaSearch } from "react-icons/fa";
 
 function Home() {
   return (
@@ -22,6 +23,14 @@ function Home() {
           <br />
           We could change yours too.
         </p>
+        <input
+          className="searchBar"
+          name="searchBar"
+          placeholder="Find your dream course..."
+        ></input>
+        <button type="button" className="searchBarBtn">
+          <FaSearch />
+        </button>
         <div className="galleryCampaign">
           <p>Take a look at your prospective journey through our university.</p>
           <button type="button">
