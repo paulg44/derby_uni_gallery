@@ -13,6 +13,10 @@
   align-items: center;
   justify-content: center;
   gap: 25px 50px;
+
+  .scrollBtns {
+    display: none;
+  }
 }
 
 .imageCard {
@@ -66,9 +70,9 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .gallery {
-    height: auto;
+    height: 100vh;
     background: linear-gradient(var(--light-blue), var(--dark-blue));
   }
 
@@ -76,5 +80,31 @@
     margin: 120px 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+
+    .imageCard {
+      position: absolute;
+      opacity: 0.5;
+    }
+
+    .active {
+      opacity: 1;
+      z-index: 10;
+    }
+
+    .scrollBtns {
+      display: block;
+      position: absolute;
+      top: 75%;
+
+      button {
+        width: 100px;
+        margin: 0 10px;
+      }
+    }
   }
 }
