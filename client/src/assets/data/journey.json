@@ -33,7 +33,7 @@
     "caption": "Lectures",
     "description": "Lectures begin in your chosen subject.",
     "linkName": "More about lectures",
-    "link": ""
+    "link": "https://www.derby.ac.uk/undergraduate/"
   },
   {
     "id": 5,
@@ -45,12 +45,12 @@
     "link": "https://www.derby.ac.uk/life/union-of-students/clubs-and-societies/"
   },
   {
-    "id": 7,
+    "id": 6,
     "image": "/images/graduation.jpg",
     "alt": "graduation",
     "caption": "Graduation",
     "description": "The last step in the journey, but the most important one. Enjoy the day, go out in the world and make Derby proud.",
     "linkName": "More about graduation",
-    "link": ""
+    "link": "https://www.derby.ac.uk/"
   }
 ]
