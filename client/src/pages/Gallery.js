@@ -21,6 +21,9 @@ function Gallery() {
   return (
     <div className="gallery">
       <div className="galleryCardContainer">
+        <h2>
+          Start <span>your</span> journey with us
+        </h2>
         {data.map((step, index) => (
           <div
             className={`imageCard ${index === photoIndex ? "active" : ""}`}

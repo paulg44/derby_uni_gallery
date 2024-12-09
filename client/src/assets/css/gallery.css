@@ -7,14 +7,14 @@
 
 .galleryCardContainer {
   margin-top: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 25px 50px;
 
-  .scrollBtns {
+  .scrollBtns,
+  h2 {
     display: none;
   }
 }
@@ -94,6 +94,20 @@
     .active {
       opacity: 1;
       z-index: 10;
+    }
+
+    h2 {
+      display: block;
+      text-transform: uppercase;
+      position: absolute;
+      top: 15%;
+      color: white;
+      margin: 0 10px;
+      text-align: center;
+
+      span {
+        color: var(--gold-colour);
+      }
     }
 
     .scrollBtns {
