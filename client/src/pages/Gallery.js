@@ -43,10 +43,10 @@ function Gallery() {
           </div>
         ))}
         <div className="scrollBtns">
-          <button onClick={handlePreviousPhoto}>
+          <button onClick={handlePreviousPhoto} aria-label="next">
             <FaArrowLeft />
           </button>
-          <button onClick={handleNextPhoto}>
+          <button onClick={handleNextPhoto} aria-label="previous">
             <FaArrowRight />
           </button>
         </div>

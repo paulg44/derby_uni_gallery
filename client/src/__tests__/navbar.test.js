@@ -35,3 +35,14 @@ test("one list item to be link called gallery", () => {
 
   expect(navLink).toBeInTheDocument();
 });
+
+test("navigates to gallery", () => {
+  render(
+    <MemoryRouter>
+      <Navbar />
+    </MemoryRouter>
+  );
+
+  const galleryLink = screen.getByText(/gallery/i);
+  expect(galleryLink).toHaveAttribute("href", "/gallery");
+});

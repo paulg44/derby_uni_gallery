@@ -26,3 +26,14 @@ test("has button with link", () => {
     screen.getByRole("link", { name: /view the gallery/i })
   ).toBeInTheDocument();
 });
+
+test("navigates to gallery", () => {
+  render(
+    <MemoryRouter>
+      <Home />
+    </MemoryRouter>
+  );
+
+  const buttonLink = screen.getByRole("link", { name: /view the gallery/i });
+  expect(buttonLink).toHaveAttribute("href", "/gallery");
+});
