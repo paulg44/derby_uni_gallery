@@ -6,6 +6,18 @@
   justify-content: center;
   color: white;
 
+  .apiLink {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 10px;
+
+    &:hover {
+      color: var(--gold-colour);
+      border-bottom: 2px solid black;
+    }
+  }
+
   .homepageHeader {
     margin: 0 100px;
 

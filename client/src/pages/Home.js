@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "../assets/css/home.css";
-import homeBackground from "../assets/images/turtle_bg_3.jpg";
 import { FaSearch } from "react-icons/fa";
 
 function Home() {
@@ -44,6 +43,9 @@ function Home() {
           </button>
         </div>
       </div>
+      <Link className="apiLink" to={"/api"}>
+        API Extra
+      </Link>
     </div>
   );
 }

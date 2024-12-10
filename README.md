@@ -43,4 +43,4 @@ To view in browser: open http://localhost:3000
 - Evolution: The project is set up to expand and be able to add more features such as specific journeys for specific courses.
 - Accessibility/Performance: The project scores highly in accessibility using the lighthouse tool in Google dev tools. The application does need some work on performance, mainly due to the size of the image files. This is something I will look into changing the jpg files to WebP or AVIF.
 - Key Takeaways: For me, my biggest takeaway is SCSS instead of CSS, this is the first project I have done the styling in this way and I really enjoyed it. Not only that, I can see the benefit of SCSS in a large scale application, not repeating code and it seems very scalable. I have just started with this but I am keen to learn more.
-- Difficulties:
+- Difficulties: Responsiveness, it was quite a challenge to make everything look great on all devices including mobile and tablets. I've learnt a fair amount about making the layout different according to the device being used. Still could do with some tweaks on a couple of devices, but in general it is responsive.
