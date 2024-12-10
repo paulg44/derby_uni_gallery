@@ -4,12 +4,7 @@ import { FaSearch } from "react-icons/fa";
 
 function Home() {
   return (
-    <div
-      className="homepage"
-      // style={{
-      //   background: `url(${homeBackground}) no-repeat center center/cover`,
-      // }}
-    >
+    <div className="homepage">
       <div className="homepageHeader">
         <h1>
           The future is <span>you</span>

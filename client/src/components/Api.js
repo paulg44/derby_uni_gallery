@@ -7,11 +7,36 @@ function APITest() {
   const [description, setDescription] = useState("");
   const [established, setEstablished] = useState("");
 
+  const [university, setUniversity] = useState("");
+
+  const universities = [
+    {
+      id: 1,
+      name: "Royal Veterinary College",
+    },
+    {
+      id: 2,
+      name: "The Open University",
+    },
+    {
+      id: 3,
+      name: "The University of Leeds",
+    },
+    {
+      id: 4,
+      name: "The University of Liverpool",
+    },
+    {
+      id: 5,
+      name: "University of Nottingham",
+    },
+  ];
+
   useEffect(() => {
     const handleApiRequest = async () => {
       try {
         const response = await fetch(
-          `https://unidbapi.com/api/university/read?u=The Open University&key=378dbc801d`
+          `https://unidbapi.com/api/university/read?u=${university}&key=378dbc801d`
         ).then((data) => {
           return data.json();
         });
@@ -25,7 +50,12 @@ function APITest() {
       }
     };
     handleApiRequest();
-  }, []);
+  }, [university]);
+
+  const handleSelectedUniversity = (e) => {
+    const selectedValue = e.target.value;
+    setUniversity(selectedValue);
+  };
 
   return (
     <div className="apiPage">
@@ -40,17 +70,33 @@ function APITest() {
           sprinkle some data from this API in the image metadata etc. You can
           pick a University from the dropdown below to view the information.
         </p>
-      </div>
 
-      <div className="apiInfo">
-        <p>
-          Located in the city of <span>{city}</span>, {country}
-        </p>
-        <p>
-          Established - <span>{established}</span>
-        </p>
-        <p>{description}</p>
-      </div>
+        <div className="selectUni">
+          <select
+            name="uniSelect"
+            value={university}
+            onChange={handleSelectedUniversity}
+          >
+            <option value="" hidden>
+              Please select a university
+            </option>
+            {universities.map((universities, id) => (
+              <option key={id} value={universities.name}>
+                {universities.name}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="apiInfo">
+          <p>
+            Located in the city of <span>{city}</span>, {country}
+          </p>
+          <p>
+            Established - <span>{established}</span>
+          </p>
+          <p className="apiDesc">{description}</p>
+        </div>
+      </div>{" "}
     </div>
   );
 }
