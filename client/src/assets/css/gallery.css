@@ -70,7 +70,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .gallery {
     height: 100vh;
     background: linear-gradient(
@@ -127,5 +127,18 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 768px) {
+  .gallery {
+    height: 100vh;
+    margin: 20px 0 20px;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 0.3) 65%,
+      var(--light-blue) 90%
+    );
   }
 }
