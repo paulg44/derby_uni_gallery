@@ -1,0 +1,78 @@
+.apiPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  color: white;
+  margin: 0 100px;
+
+  .apiHeader {
+    h2 {
+      font-size: 70px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0;
+      margin-bottom: 20px;
+      background-color: black;
+      width: 700px;
+
+      span {
+        color: var(--gold-colour);
+      }
+    }
+
+    .apiInfo {
+      width: 60%;
+      /* height: auto; */
+
+      span {
+        color: var(--gold-colour);
+      }
+    }
+
+    .selectUni {
+      select {
+        width: 600px;
+        background-color: var(--gold-colour);
+        color: white;
+        height: 70px;
+        border: none;
+        margin: 30px 0;
+        font-size: 20px;
+        padding: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .apiPage {
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(0, 0, 0, 0.3) 65%,
+        rgba(0, 0, 0, 0) 90%
+      ),
+      url("../images/turtle_bg.jpg") no-repeat center;
+    background-size: cover;
+
+    .apiHeader {
+      margin: 0 20px;
+      h2 {
+        font-size: 40px;
+        width: auto;
+      }
+
+      .apiInfo {
+        width: auto;
+      }
+
+      .selectUni {
+        width: 200px;
+      }
+    }
+  }
+}
