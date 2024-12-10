@@ -13,7 +13,10 @@
       font-size: 70px;
       font-weight: 700;
       text-transform: uppercase;
-      padding-bottom: 10px;
+      padding: 0;
+      margin-bottom: 20px;
+      background-color: black;
+      width: 700px;
     }
 
     span {
@@ -48,6 +51,14 @@
 
 @media (max-width: 650px) {
   .homepage {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(0, 0, 0, 0.3) 65%,
+        rgba(0, 0, 0, 0) 90%
+      ),
+      url("../images/turtle_bg.jpg") no-repeat center;
+    background-size: cover;
     align-items: center;
     text-align: center;
 
@@ -55,6 +66,7 @@
       margin: 0 20px;
       h1 {
         font-size: 40px;
+        width: auto;
       }
 
       .homepageInfo {

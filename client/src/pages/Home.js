@@ -7,9 +7,9 @@ function Home() {
   return (
     <div
       className="homepage"
-      style={{
-        background: `url(${homeBackground}) no-repeat center center/cover`,
-      }}
+      // style={{
+      //   background: `url(${homeBackground}) no-repeat center center/cover`,
+      // }}
     >
       <div className="homepageHeader">
         <h1>

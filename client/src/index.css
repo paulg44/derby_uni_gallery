@@ -19,8 +19,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
-  background: url("./assets/images/turtle_bg_3.jpg") no-repeat center
-    center/cover;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1) 25%,
+      rgba(0, 0, 0, 0.3) 45%,
+      rgba(0, 0, 0, 0) 90%
+    ),
+    url("./assets/images/turtle_bg_3.jpg") no-repeat center center/cover;
+  background-size: cover;
 }
 
 code {
