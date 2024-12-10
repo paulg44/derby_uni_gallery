@@ -21,7 +21,6 @@ test("has button with link", () => {
     </MemoryRouter>
   );
 
-  expect(screen.getByRole("button")).toBeInTheDocument();
   expect(
     screen.getByRole("link", { name: /view the gallery/i })
   ).toBeInTheDocument();

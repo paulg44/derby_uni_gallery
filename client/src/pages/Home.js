@@ -29,7 +29,11 @@ function Home() {
             name="searchBar"
             placeholder="Find your dream course..."
           ></input>
-          <button type="button" className="searchBarBtn">
+          <button
+            type="button"
+            className="searchBarBtn"
+            aria-label="search bar button"
+          >
             <FaSearch />
           </button>
         </div>
