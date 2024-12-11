@@ -24,6 +24,7 @@ function Navbar() {
       <div className="navMenu" onClick={openNavMenu}>
         <FaBars />
       </div>
+      {/* Conditional class assignment */}
       <div className={`navLinksContainer ${navMenuOpen ? "open" : ""}`}>
         <ul className="navLinks">
           {navMenuOpen && (

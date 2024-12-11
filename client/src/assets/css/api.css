@@ -48,6 +48,7 @@
 
 @media (max-width: 650px) {
   .apiPage {
+    margin: 50px 0;
     align-items: center;
     text-align: center;
     background: linear-gradient(
@@ -71,7 +72,9 @@
       }
 
       .selectUni {
-        width: 200px;
+        select {
+          width: 300px;
+        }
       }
     }
   }
