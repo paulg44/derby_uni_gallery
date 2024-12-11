@@ -124,6 +124,16 @@
         button {
           width: 100px;
           margin: 0 10px;
+
+          &:active {
+            transform: scale(0.98);
+            color: var(--gold-colour);
+            background-color: white;
+          }
+
+          &:disabled {
+            opacity: 0.5;
+          }
         }
       }
     }
