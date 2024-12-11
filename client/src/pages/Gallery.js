@@ -30,7 +30,7 @@ function Gallery() {
             className={`imageCard ${index === photoIndex ? "active" : ""}`}
             key={step.id}
           >
-            <img src={step.image} alt={step.alt} />
+            <img src={step.image} alt={step.alt} loading="lazy" />
             <h3>{step.caption}</h3>
             <div className="metadata">
               <h4>{step.caption}</h4>
