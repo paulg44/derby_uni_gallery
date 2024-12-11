@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
     gap: 25px 50px;
+    overflow: hidden;
 
     .scrollBtns,
     h2 {
@@ -25,6 +26,8 @@
       background-color: white;
       box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
       overflow: hidden;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
 
       img {
         width: 90%;
@@ -70,6 +73,17 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 767px) {
   .gallery {
     height: 100vh;
@@ -95,6 +109,7 @@
       .imageCard {
         position: absolute;
         opacity: 0.5;
+        animation: none;
       }
 
       .active {
