@@ -26,6 +26,7 @@ function Gallery() {
         </h2>
         {data.map((step, index) => (
           <div
+            // Conditional class assignment
             className={`imageCard ${index === photoIndex ? "active" : ""}`}
             key={step.id}
           >

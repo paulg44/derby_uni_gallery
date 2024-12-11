@@ -88,13 +88,19 @@ function APITest() {
           </select>
         </div>
         <div className="apiInfo">
-          <p>
-            Located in the city of <span>{city}</span>, {country}
-          </p>
-          <p>
-            Established - <span>{established}</span>
-          </p>
-          <p className="apiDesc">{description}</p>
+          {/* Conditional Render */}
+          {university && university ? (
+            <p>
+              Located in the city of <span>{city}</span>, {country}
+              <br />
+              Established - <span>{established}</span>
+              <br />
+              <br />
+              {description}
+            </p>
+          ) : (
+            <p>Please select a university from the list above</p>
+          )}
         </div>
       </div>{" "}
     </div>
